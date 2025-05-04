@@ -1,23 +1,13 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="min-h-screen bg-gradient-to-r from-sky-400 to-purple-500 flex items-center justify-center">
+      <div className="text-white text-center p-10 rounded-xl shadow-lg bg-white/10 backdrop-blur-md">
+        <h1 className="text-4xl font-bold mb-4">Emotion Player 🎵</h1>
+        <p className="text-lg">계절 테마에 따라 감성 음악을 즐겨보세요</p>
+      </div>
     </div>
   );
 }
