@@ -105,4 +105,34 @@ export default tracks
 - 또는
 ```sh
 
-npm install -D tailwindcss postcss autoprefixer
+npm install -D tailwindcss@3.4.1 postcss autoprefixer
+npx tailwindcss init -p
+
+```
+
+### 이번 프로젝트를 위한 코드수정
+
+```sh
+# postcss.config.js 
+module.exports = {
+  plugins: {
+    tailwindcss: {},
+    autoprefixer: {},
+  },
+}
+
+# tailwind.config.js
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ['./src/**/*.{js,jsx,ts,tsx}'],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+};
+
+# .vscode/settings.json
+
+{
+  "css.lint.unknownAtRules": "ignore"
+}
